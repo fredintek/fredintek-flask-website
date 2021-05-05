@@ -1,0 +1,80 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <section class="head-area">
+        <img src="{{ url_for('static', filename='images/'+'FredintekThumbnail.jpg') }}" class="head-area-img">
+        <ul class="head-area-socials">
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Goes Here -->
+
+    <section class="content-area">
+        <form action="" method="POST" class="form-container">
+            {{form.hidden_tag()}}
+            <fieldset class="form-group">
+                <legend class="form-legend text-center">Contact Me</legend>
+                <div class="form-group">
+                    {{form.username.label(class="form-control-label d-block mb-0")}}
+                    {% if form.username.errors %}
+                        {{form.username(class="form-control input-field is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{form.username(class="form-control input-field")}}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{form.email.label(class="form-control-label d-block mb-0")}}
+                    {% if form.email.errors %}
+                        {{form.email(class="form-control input-field is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{form.email(class="form-control input-field")}}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{form.subject.label(class="form-control-label d-block mb-0")}}
+                    {% if form.subject.errors %}
+                        {{form.subject(class="form-control input-field is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.subject.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{form.subject(class="form-control input-field")}}
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{form.message.label(class="form-control-label d-block mb-0")}}
+                    {% if form.message.errors %}
+                        {{form.message(class="input-field text-area is-invalid")}}
+                        <div class="invalid-feedback">
+                            {% for error in form.message.errors %}
+                                <span>{{error}}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{form.message(class="input-field text-area")}}
+                    {% endif %}
+                </div>
+                <div class="form-group text-center">
+                    {{form.submit(class="btn")}}
+                </div>
+            </fieldset>
+        </form>
+    </section>
+{% endblock content %}

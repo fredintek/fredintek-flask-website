@@ -1,0 +1,118 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <section class="head-area">
+        <img src="{{url_for('static', filename='images/'+'FredintekThumbnail.jpg')}}" class="head-area-img">
+        <ul class="head-area-socials">
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <section class="portfolio-descs">
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Work Experience</h3>
+                <ul>
+                    <li>Youtube Educational Content Creator <a href="#">youtube link</a></li>
+                    <li>IT intern at Microsoft 2022</li>
+                    <li>Freelancer: Helped a lot of people accomplish webscraping jobs <a href="#">freelance</a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Education</h3>
+                <ul>
+                    <li>Near East University (North Cyprus) <a href="#">neu.edu.tr</a>
+                    <li>Bachelor Of Science Mathematics
+                    <li>Currently a first year student</li>
+                    <li>GPA: 3.6/4.0</li>
+                    <li>Awards: Best student in mathematics 2009 Macmillian award (Primary School),<br>
+                        Best graduating student in computer Science in High School(Lagos State Senior Model College
+                        Kankon 2017)
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Technical Skills</h3>
+                <ul>
+                    <li>Python <i class="fab fa-python"></i></li>
+                    <li>JavaScripts <i class="fab fa-js"></i></li>
+                    <li>Html5 <i class="fab fa-html5"></i></li>
+                    <li>Css <i class="fab fa-css3"></i></li>
+                    <li>SqlAlchemy</li>
+                    <li>Mathematics and Statistics</li>
+                </ul>
+            </div>
+        </article>
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">FrameWorks</h3>
+                <ul>
+                    <li>Django <i class="fab fa-python"></i></li>
+                    <li>Flask <i class="fab fa-python"></i></li>
+                    <li>Bootstrap <i class="fab fa-bootstrap"></i></li>
+                    <li>Git & GitHub <i class="fab fa-github"></i></li>
+                </ul>
+            </div>
+        </article>
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Softwares</h3>
+                <ul>
+                    <li>Windows, Linux Bash shell</li>
+                    <li>Sublime Text</li>
+                    <li>Vs-code, Pycharm, Atom</li>
+                    <li>Chrome Dev Tools</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </article>
+        <article class="article-card">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Activities Hobbies</h3>
+                <ul>
+                    <p>
+                        <li>Mathematics: sometimes during my leisure i like to wrangle some mathematics. It presents a
+                            good mind bending challenge.
+                        </li>
+                    </p>
+                    <li>I love playing soccer</li>
+                    <li>I am also a beach lover</li>
+                    <!-- <li>Freelancer: Helped a lot of people accomplish webscraping jobs <a href="">freelance</a></li> -->
+                </ul>
+            </div>
+        </article>
+        <article class="article-card accomapps">
+            <!-- <figure><img src="" alt=""></figure> images could be here -->
+            <div class="article-content">
+                <h3 class="article-title">Accomplished Applications</h3>
+                <ul>
+                    <li>Fredintek.com</li>
+                    <p>Built my personal website <i>fredintek.com</i></p>
+                    <li>Weather application</li>
+                    <p>I built this application in both Django and Flask. The idea is to be able to consume a weather
+                        API and be able to render the required data needed from the api into your Application</p>
+                    <p>I also worked with a database to store the data needed from the weather API.</p>
+                    <li>Blog Application</li>
+                    <p>I was able to build this appliction in Django and Flask. Building this application helped me
+                        discover more about the In's and out's of these frameworks</p>
+                    <p>and some other applications. I made work-through videos of each of them on my Youtube Channel.
+                    </p>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+{% endblock content %}

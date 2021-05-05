@@ -1,0 +1,23 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <section class="hero">
+        <h2 class="hero-text">HEY I'M ALFRED ARINZE WELCOME TO MY WEBSITE</h2>
+    </section>
+    <section class="card-links">
+        <div class="card-link">
+            <h3 class="card-title">View My Tutorials</h3>
+            <p>Checkout my latest tutorials in python programming</p>
+            <a href="{{ url_for('tutorials') }}" class="btn">view</a>
+        </div>
+        <div class="card-link">
+            <h3 class="card-title">My Portfolio</h3>
+            <p>Know a little about me and my educational background</p>
+            <a href="{{ url_for('portfolio') }}" class="btn">view</a>
+        </div>
+        <div class="card-link">
+            <h3 class="card-title">Contact Me</h3>
+            <p>You can reach me via Email</p>
+            <a href="{{ url_for('contact') }}" class="btn">Go</a>
+        </div>
+    </section>
+{% endblock content %}

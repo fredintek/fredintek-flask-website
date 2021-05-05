@@ -1,0 +1,65 @@
+{% extends "layouts.html" %}
+{% block content %}
+    <section class="head-area">
+        <img src="{{url_for('static', filename='images/'+'FredintekThumbnail.jpg')}}" class="head-area-img">
+        <ul class="head-area-socials">
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-github"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <!-- Tutorial Article Goes Here -->
+    <section class="tutorial-article-main">
+        <article class="tutorial-article">
+            <header class="tutorial-article-header">
+                <h1>Python Strings</h1>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est impedit explicabo adipisci provident
+                repudiandae, delectus eaque excepturi beatae laboriosam corporis exercitationem ad odit nobis
+                repellendus quae velit doloremque expedita molestias.
+            </p>
+            <div class="videowrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k9TUPpGqYTo"
+                    title="YouTube video player" rel="0" ; modestbranding=1; frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </article>
+        <article class="tutorial-article">
+            <header class="tutorial-article-header">
+                <h1>Working With Numbers In Python</h1>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est impedit explicabo adipisci provident
+                repudiandae, delectus eaque excepturi beatae laboriosam corporis exercitationem ad odit nobis
+                repellendus quae velit doloremque expedita molestias.
+            </p>
+            <div class="videowrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/khKv-8q7YmY"
+                    title="YouTube video player" rel="0" ; modestbranding=1; frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </article>
+        <article class="tutorial-article">
+            <header class="tutorial-article-header">
+                <h1>Python Dictionaries</h1>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est impedit explicabo adipisci provident
+                repudiandae, delectus eaque excepturi beatae laboriosam corporis exercitationem ad odit nobis
+                repellendus quae velit doloremque expedita molestias.
+            </p>
+            <div class="videowrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/daefaLgNkw0"
+                    title="YouTube video player" rel="0" ; modestbranding=1; frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </article>
+    </section>
+{% endblock content %}
